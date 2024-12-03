@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockemon Card Maker</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Noto+Sans+Display:ital,wdth,wght@0,90.7,100..900;1,90.7,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header></header>
+<img class="title" src="mockemon.png">
+
+<div class="labels">
+    <h2 class="in-line">Name:</h2>
+    <input class="nameText in-line" type="text" maxlength="15">
+    <br>
+    <h2 class="in-line">Color(HEX): </h2>
+    <input class="colorText in-line" type="text" placeholder="#RRGGBB">
+    <br>
+    <h2 class="in-line">Image:</h2>
+    <input class="in-line" type="file" id="imageInput" accept="image/*"/>
+    <br>
+    <label for="type"><h2 class="in-line">Type:</h2>
+        <select class="in-line" id="type">
+            <option value="Colorless">Colorless</option>
+            <option value="Darkness">Darkness</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Fire">Fire</option>
+            <option value="Grass">Grass</option>
+            <option value="Lightning">Lightning</option>
+            <option value="Metal">Metal</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Water">Water</option>
+        </select>
+    </label>
+    <br>
+    <h2 class="in-line">HP:</h2>
+    <input class="in-line HP-input" max="99" type="number">
+    <br>
+    <h2 class="in-line">1st Power:</h2>
+    <input class="in-line power1Text" type="text" maxlength="35">
+    <br>
+    <h2 class="in-line">Description</h2>
+    <input class="in-line description1Text" type="text" maxlength="230">
+    <br>
+    <h2 class="in-line">2nd Power:</h2>
+    <input class="in-line power2Text" type="text" maxlength="35">
+    <br>
+    <h2 class="in-line">Description:</h2>
+    <input class="in-line description2Text" type="text" maxlength="230">
+    <br>
+    <h2 class="in-line">Weakness:</h2>
+    <input class="in-line weaknessText" type="text" maxlength="80">
+    <br>
+    <h2 class="in-line">Quote:</h2>
+    <input class="in-line quoteText" type="text" maxlength="100">
+    <br>
+    <h2 class="in-line">Shine:</h2>
+    <label class="in-line" for="noShine">
+        <input id="noShine" type="radio" name="shineOption" class="inline" required checked /> No Shine
+    </label>
+    <label for="shine">
+        <input id="shine" type="radio" name="shineOption" class="in-line" required /> Shine
+    </label>
+</div>
+
+<div class="card">
+    <h2 class="name">Elon Musk</h2>
+    <h5 class="HP">HP</h5>
+    <h2 class="HPNum">90</h2>
+    <img class="energy" src="images/Colorless.png">
+    <h3 class="power1">Jack of All Trades</h3>
+    <h3 class="power2">DOGE</h3>
+    <img src="https://fortune.com/img-assets/wp-content/uploads/2024/11/GettyImages-1499013185-e1732316858717.jpg?w=1440&q=75" class="image">
+    <div class="shine"></div>
+    <div class="color"></div>
+    <img class="template" src="cardtemplate.png">
+    <h5 class="description1">
+        From PayPal to X, rockets to brains. What can't he do? Moreover, he has 12 kids as his successors. What will be his next venture? The sky is his limit. Or is it? Elon musks plans on traveling to Mars.
+    </h5>
+    <h5 class="description2">
+        Laid off 80% of Twitter Headquarters and may do the same to the White House?  ft. Vivek Ramaswamy
+    </h5>
+    <h5 class="weakness">
+        Comedy stand-ups and being bad at something.
+    </h5>
+    <h6 class="quote"><i>I'd rather be optimistic and wrong than pessimistic and right. -Elon Musk
+    </i></h6>
+    <h3 class="screenshot">Take a screenshot to save!</h3>
+</div>
+<div class="gallery"></div>
+<footer></footer>
+<script src="main.js"></script>
+</body>
+</html>
